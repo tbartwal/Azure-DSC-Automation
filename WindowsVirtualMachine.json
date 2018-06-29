@@ -107,10 +107,10 @@
     }
   },
   "variables": {
-    "virtualNetworkName": "eJukeNetwork",
-    "existingVirtualNetworkResourceGroup": "eJukeCommon",
+    "virtualNetworkName": "tarun-vnet",
+    "existingVirtualNetworkResourceGroup": "tarun-day3-rg",
     "SubscriptionID": "[subscription().subscriptionId]",
-    "vnetId": "tarun-vnet",
+    "vnetId": "[resourceId(variables('existingVirtualNetworkResourceGroup'), 'Microsoft.network/virtualnetworks', variables('virtualNetworkName'))]",
     "AutomationAccountId": "[resourceId(parameters('automationAccountRG'), 'Microsoft.Automation/automationAccounts', parameters('automationAccountName'))]",
     "subnetRef": "[concat(variables('vnetId'), '/subnets/default')]",
     "vmName": "[concat('eJukebox', parameters('JukeboxID'))]",
