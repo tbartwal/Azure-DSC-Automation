@@ -112,7 +112,7 @@
     "SubscriptionID": "[subscription().subscriptionId]",
     "vnetId": "tarun-vnet",
     "AutomationAccountId": "[resourceId(parameters('automationAccountRG'), 'Microsoft.Automation/automationAccounts', parameters('automationAccountName'))]",
-    "subnetRef": "[concat(variables('vnetId'), '/subnets/first')]",
+    "subnetRef": "[concat(variables('vnetId'), '/subnets/default')]",
     "vmName": "[concat('eJukebox', parameters('JukeboxID'))]",
     "OSDiskName": "[concat('OsDisk', variables('vmName'))]",
     "imagePublisher": "MicrosoftWindowsServer",
