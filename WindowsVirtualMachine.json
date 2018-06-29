@@ -32,14 +32,14 @@
     },
     "automationAccountName": {
       "type": "string",
-      "defaultValue": "Marc-Automation",
+      "defaultValue": "tarun-auto-account",
       "metadata": {
         "description": "Name of your Azure automation account"
       }
     },
     "automationAccountRG": {
       "type": "string",
-      "defaultValue": "Marc-Automation",
+      "defaultValue": "tarun-day3-rg",
       "metadata": {
         "description": "Resource Group of your Azure automation account"
       }
