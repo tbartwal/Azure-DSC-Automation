@@ -4,7 +4,7 @@
   "parameters": {
     "adminUsername": {
       "type": "string",
-      "defaultValue": "adminUsername",
+      "defaultValue": "marc.kean",
       "minLength": 1,
       "metadata": {
         "description": "Username for the Virtual Machine."
