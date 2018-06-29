@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0" ,
   "parameters": {
     "adminUsername": {
-      "value": "marc.kean"
+      "value": "bartwta"
     },
     "dataDiskCount": {
       "value": 1
@@ -12,7 +12,7 @@
       "value": "1603"
     },
     "adminPassword": {
-      "value": "Passw0rd2018"
+      "value": "TrainingDay3"
     }
   }
 }

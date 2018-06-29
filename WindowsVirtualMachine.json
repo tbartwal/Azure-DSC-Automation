@@ -4,7 +4,7 @@
   "parameters": {
     "adminUsername": {
       "type": "string",
-      "defaultValue": "marc.kean",
+      "defaultValue": "bartwta",
       "minLength": 1,
       "metadata": {
         "description": "Username for the Virtual Machine."
@@ -78,21 +78,21 @@
     },
     "vaultName": {
       "type": "string",
-      "defaultValue": "MSMarcVault",
+      "defaultValue": "taryn-key-vault",
       "metadata": {
         "description": "Name of Key Vault that has a secret"
       }
     },
     "vaultResourceGroup": {
       "type": "string",
-      "defaultValue": "MSMarcVault",
+      "defaultValue": "tarun-day3-rg",
       "metadata": {
         "description": "Resource Group of Key Vault that has a secret"
       }
     },
     "secretUrlWithVersion1": {
       "type": "string",
-      "defaultValue": "https://msmarcvault.vault.azure.net/secrets/MyEncryptionCert/697285956d144d408f87803dbaec9f45",
+      "defaultValue": "https://taryn-key-vault.vault.azure.net/secrets/tarun-encryption-cert/099ec5949dc044a5a20e8c62022a08e4",
       "metadata": {
         "description": "Url of the certificate in Key Vault"
       }
@@ -110,7 +110,7 @@
     "virtualNetworkName": "eJukeNetwork",
     "existingVirtualNetworkResourceGroup": "eJukeCommon",
     "SubscriptionID": "[subscription().subscriptionId]",
-    "vnetId": "[resourceId(variables('existingVirtualNetworkResourceGroup'), 'Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
+    "vnetId": "tarun-vnet",
     "AutomationAccountId": "[resourceId(parameters('automationAccountRG'), 'Microsoft.Automation/automationAccounts', parameters('automationAccountName'))]",
     "subnetRef": "[concat(variables('vnetId'), '/subnets/first')]",
     "vmName": "[concat('eJukebox', parameters('JukeboxID'))]",
